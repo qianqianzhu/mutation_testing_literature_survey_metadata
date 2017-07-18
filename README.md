@@ -1,2 +1,2 @@
-# mutation_testing_literature_survey_metadata
+# Mutation Testing Literature Survey Metadata
 sharing metadata related to our literature survey on mutation testing
