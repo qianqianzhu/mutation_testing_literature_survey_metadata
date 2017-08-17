@@ -45,6 +45,10 @@ Staats et al.\cite{staats2012automated} ,test oracle,rank variables (for test or
 Hou et al.\cite{hou2007applying},test strategy evaluation,Propose Interface-Contract Mutation coverage as a test adequacy criterion,Hand-seeded + mutation,different operators
 Smith and Williams\cite{smith2009should},test strategy evaluation,use mutation coverage to generate test data,mutation,
 Chen et al.\cite{chen2002can} ,test strategy evaluation ,use mutants to estimate fault-exposing potential,Hand-seeded ,
-Hao et al.\cite{hao2012demand},test-suite reduction,"use mutants to collect statistics on loss in fault-detection capability at the level of individual statements for various levels of confidence, and use these to construct a fault-detection- loss table",Hand-seeded + mutation,later version + evaluation set
+Hao et al.\cite{hao2012demand},test-suite reduction,"use mutants to collect statistics on loss in fault-detection capability at the level of individual statements for various levels of confidence, and use these to construct a fault-detection-loss table",Hand-seeded + mutation,later version + evaluation set
 Offutt et al.\cite{offutt1995procedures},test-suite reduction,use traces of mutants and prior faults to train the predication model (decision tree),real ,
 Shi et al.\cite{shi2014balancing} ,test-suite reduction ,to kill same mutants as the requirement,mutation ,
+Rojas et al.\cite{rojas2015combining},test data generation ,generate weak mutant killable conditions,coverage,
+Dadeau et al.\cite{dadeau2011mutation},test data generation ,generate test data to kill mutants,mutation,
+Vincenzi et al.\cite{vincenzi2001unit},test data generation,generate test data to kill mutants,mutation,
+Briand et al.\cite{briand2006automated},test-suite reduction,use mutation analysis as an indicator of test cases with high fault detection capability to select test cases,no evaluation,

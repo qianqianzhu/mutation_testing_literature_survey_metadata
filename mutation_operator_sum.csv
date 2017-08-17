@@ -80,7 +80,7 @@ Stephan and Cordy\cite{stephan2014model},specification,simulink,
 Tan and Edwards\cite{tan2008evaluating},"arithmetic op, relational op, conditional op, conditional exp, statement deletion, program",sulu,sulu tool
 Tasiran et al.\cite{tasiran2012location},"concurrent mutation, program",java,
 Tuya et al.\cite{tuya2010full} ,"arithmetic op, conditional op, relational op, absolute value, constant, variable, SQL-specific, program", SQL , SQLMutation 
-Vergilio et al.\cite{vergilio2006constraint},"bomb statement, conditional exp, statement deletion, return statement, goto label, control-flow disruption, while statement, do-while statement, loop trap, statement swap, brace, switch statement, arithmetic op, bitwise op, conditional op, shift op, relational op, assignment o, parentheses, type, variable, constant, program",C,Proteum
+Vergilio et al.\cite{vergilio2006constraint},"bomb statement, conditional exp, statement deletion, return statement, goto label, control-flow disruption, while statement, do statement, loop trap, statement swap, brace, switch statement, arithmetic op, bitwise op, conditional op, shift op, relational op, assignment op, parentheses, type, variable, constant, program",C,Proteum
 von Mayrhauser et al.\cite{von2000planner},specification,n/a,
 Wang et al.\cite{wang2010correlating},"arithmetic op, relational op, conditional op, bitwise op, assignment op, shift op,OO-specific, Java-specific, program",Java,MuClipse
 Watanabe and Sakamura\cite{watanabe1996specification},"relational op, constant, method call, program",Specification (Z notation),
@@ -97,3 +97,11 @@ Zhang et al.\cite{zhang2010test} ,"absolute value, arithmetic op, conditional op
 Zhang et al.\cite{zhang2011empirical} ,"arithmetic op, relational op, conditional op, bitwise op, assignment op, shift op, program", Java , MuJava 
 Zhou and Frankl\cite{zhou2011jdama} ,"arithmetic op, conditional op, relational op, absolute value, constant, variable, SQL-specific, program",sql, JDAMA (based on SQLMutation) 
 Offutt et al.\cite{offutt1995procedures},"constant, variable, arithmetic op, relational op, conditional op, statement deletion, return statement, goto label, do statement, bomb statement, absolute value, program",Fortran, Mothra
+Rojas et al.\cite{rojas2015combining},"arithmetic op, relational op, constant, variable, conditional op, statement deletion, OO-specific, bitwise op, program",,
+Dadeau et al.\cite{dadeau2011mutation},specification,,
+Polo et al.\cite{polo2007integrating},"arithmetic op, relational op, conditional op, bitwise op, assignment op, shift op,OO-specific, Java-specific, program",,
+Flores and Polo\cite{flores2012testing},"arithmetic op, relational op, conditional op, bitwise op, assignment op, shift op,OO-specific, Java-specific, Interface mutation, program",,
+Vincenzi et al.\cite{vincenzi2001unit},"bomb statement, conditional exp, statement deletion, return statement, goto label, control-flow disruption, while statement, do statement, loop trap, statement swap, brace, switch statement, arithmetic op, bitwise op, conditional op, shift op, relational op, assignment op, parentheses, type, variable, constant, interface mutation, program",,
+Mariani et al.\cite{mariani2007compatibility},"interface mutation, program",,
+Edwards\cite{edwards2001framework},"absolute value, arithmetic op, conditional op, relational op, program",,
+Flores and Polo\cite{flores2008testing},"arithmetic op, relational op, conditional op, bitwise op, assignment op, shift op,OO-specific, Java-specific, Interface mutation, program",,
