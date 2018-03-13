@@ -1,0 +1,34 @@
+,MuJava/&mu;-java/Muclipse,PIT/PiTest,JAVALANCHE,MAJOR,Jumble,Sofya,Jester,Proteum,MiLu,SMT-C,Proteum/IM,Mothra,SQLMutation/JDAMA,SchemaAnalyst,GenMutants,PexMutator,MUTANDIS ,AjMutator,MoMuT::UML
+Specification Mutation ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,&radic;
+arithmetic operator ,&radic;,&radic;<sup>*</sup>,&radic;<sup>*</sup>,&radic;<sup>*</sup>,&radic;<sup>*</sup>,&radic;<sup>*</sup>,-,&radic;,&radic;<sup>*</sup>,&radic;<sup>*</sup>,-,&radic;<sup>*</sup>,&radic;<sup>*</sup>,-,&radic;<sup>*</sup>,&radic;<sup>*</sup>,&radic;<sup>*</sup>,-,-
+relational operator ,&radic;,&radic;<sup>*</sup>,-,&radic;,-,&radic;<sup>*</sup>,-,&radic;,&radic;,&radic;<sup>*</sup>,-,&radic;,&radic;,-,&radic;,&radic;,&radic;,-,-
+conditional operator ,&radic;,&radic;<sup>*</sup>,&radic;<sup>*</sup>,&radic;<sup>*</sup>,&radic;<sup>*</sup>,&radic;<sup>*</sup>,-,&radic;,&radic;,-,-,&radic;,&radic;,-,&radic;,&radic;,&radic;<sup>*</sup>,-,-
+assignment operator ,&radic;,&radic;<sup>*</sup>,-,-,-,-,-,-,&radic;,&radic;<sup>*</sup>,-,-,-,-,-,-,-,-,-
+bitwise operator ,&radic;,&radic;<sup>*</sup>,-,-,&radic;<sup>*</sup>,-,-,&radic;,&radic;<sup>*</sup>,-,-,-,-,-,-,-,-,-,-
+shift operator ,&radic;,&radic;<sup>*</sup>,-,&radic;,&radic;<sup>*</sup>,-,-,&radic;,-,-,-,-,-,-,-,-,-,-,-
+constant ,-,&radic;,&radic;,-,&radic;,-,&radic;<sup>*</sup>,&radic;,&radic;,&radic;<sup>*</sup>,-,&radic;,&radic;,-,-,-,&radic;,-,-
+variable ,-,&radic;,-,-,&radic;<sup>*</sup>,-,-,&radic;,-,-,-,&radic;,&radic;,-,-,-,&radic;,-,-
+absolute value ,-,-,-,&radic;,-,-,-,-,&radic;<sup>*</sup>,-,-,&radic;,&radic;,-,&radic;,&radic;,-,-,-
+conditional expression ,-,&radic;,-,-,-,-,&radic;,&radic;,-,-,-,-,-,-,-,-,-,-,-
+parenthesis ,-,-,-,-,-,-,-,&radic;,-,&radic;<sup>*</sup>,-,-,-,-,-,-,-,-,-
+type ,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-,-,&radic;<sup>*</sup>,-,-
+statement deletion ,-,&radic;<sup>*</sup>,&radic;<sup>*</sup>,-,-,-,-,&radic;,&radic;,-,-,&radic;,-,-,-,-,&radic;<sup>*</sup>,-,-
+method call ,-,-,-,-,-,&radic;<sup>*</sup>,-,-,-,&radic;<sup>*</sup>,-,-,-,-,-,-,&radic;<sup>*</sup>,-,-
+return statement ,-,&radic;,-,-,&radic;,-,-,&radic;,-,-,-,&radic;,-,-,-,-,&radic;,-,-
+if statement,-,-,-,-,-,-,-,-,-,&radic;<sup>*</sup>,-,-,-,-,-,-,-,-,-
+exception handler ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+goto label ,-,-,-,-,-,-,-,&radic;,-,-,-,&radic;,-,-,-,-,-,-,-
+control-flow disruption ,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-,-,&radic;,-,-
+statement swap ,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-,-,&radic;<sup>*</sup>,-,-
+bomb statement ,-,-,-,-,-,-,-,&radic;,-,-,-,&radic;,-,-,-,-,-,-,-
+switch statement ,-,&radic;,-,-,&radic;,-,-,&radic;,-,&radic;,-,-,-,-,-,-,&radic;,-,-
+do statement ,-,-,-,-,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-
+brace ,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-,-,-,-,-
+loop trap ,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-,-,-,-,-
+while statement ,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-,-,-,-,-
+OO-specific ,&radic;,&radic;<sup>*</sup>,-,-,-,&radic;<sup>*</sup>,-,-,-,-,-,-,-,-,-,-,-,-,-
+Java-specific ,&radic;,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+SQL-specific ,-,-,-,-,-,-,-,-,-,-,-,-,&radic;,&radic;,-,-,-,-,-
+JavaScript-specific ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,&radic;,-,-
+AOP-specific,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,&radic;,-
+interface mutation,-,-,-,-,-,-,-,-,-,-,&radic;,-,-,-,-,-,-,-,-
