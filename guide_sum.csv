@@ -52,3 +52,7 @@ Rojas et al.\cite{rojas2015combining},test data generation ,generate weak mutant
 Dadeau et al.\cite{dadeau2011mutation},test data generation ,generate test data to kill mutants,mutation,
 Vincenzi et al.\cite{vincenzi2001unit},test data generation,generate test data to kill mutants,mutation,
 Briand et al.\cite{briand2006automated},test-suite reduction,use mutation analysis as an indicator of test cases with high fault detection capability to select test cases,no evaluation,
+Fraser and Zeller\cite{fraser2011generating},test data generation,use mutants to generalize pre- and post-conditions with the test case into a parameterized unit tests,mutation,
+Mirshokraie et al.\cite{mirshokraie2015jseft},"test data generation, test oracle",generate test oracles based on the state differences introduced by mutants,mutation,evaluation set
+Vemasani et al.\cite{vemasani2014generating},test data generation,generate test data to kill mutants,mutation,
+Riener et al.\cite{riener2011test},test data generation,generate strong mutant killable conditions,mutation,
