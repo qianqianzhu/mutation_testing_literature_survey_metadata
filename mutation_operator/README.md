@@ -8,6 +8,7 @@ Our generic classification of mutation operators is as follows:
 
   1. Specification mutation
   2. Program mutation
+
     - (a) Expression-level
         - (i) **arithmetic operator**:
         it mutates the arithmetic operators (including addition "+", subtraction "-", multiplication "\*", division "/", modulus "%" , unary operators "+", "-", and short-cut operators "++", "--")<sup>[1](#myfootnote1)</sup> by replacement, insertion or deletion.
@@ -33,6 +34,7 @@ Our generic classification of mutation operators is as follows:
         it replaces the conditional expression by _true_/_false_ so that the statements following the conditional always execute or skip.
         - (xii) **parenthesis:**
         it changes the precedence of the operation by deleting, adding or removing the parentheses.
+
     - (b) Statement-level
       - (i) **_return_ statement:**
       it mutates _return_ statement in the method calls including _return_ value replacement or _return_ statement swapping.
@@ -62,6 +64,7 @@ Our generic classification of mutation operators is as follows:
       it replaces _do_ statements with _while_ statements.
       - (xiv) **_while_ statement:**
       it replaces _while_ statements with _do_ statements.
+
     - (c) Others
       - (i) **OO-specific:**
       the mutation operators related to O(bject)-O(riented) Programming features[[4]](#ref4), such as Encapsulation, Inheritance and Polymorphism, e.g. _super_ keyword insertion.
