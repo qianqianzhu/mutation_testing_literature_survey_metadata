@@ -8,7 +8,8 @@ Our generic classification of mutation operators is as follows:
 
   1. Specification mutation
   2. Program mutation
-    <ul><li>(a) Expression-level</li>
+  <ul>
+    <li>(a) Expression-level</li>
       <ul>
        <li> (i) **arithmetic operator**:</li>
         it mutates the arithmetic operators (including addition "+", subtraction "-", multiplication "\*", division "/", modulus "%" , unary operators "+", "-", and short-cut operators "++", "--")<sup>[1](#myfootnote1)</sup> by replacement, insertion or deletion.
@@ -86,6 +87,7 @@ Our generic classification of mutation operators is as follows:
        the mutation operators related to Interface-specific features[[12]](#ref12)[[13]](#ref13)}, suitable for use during integration testing.
     </ul>
 </ul>
+
 ## Footnotes:
 
 <a name="myfootnote1">1</a>:The syntax of these operators might vary slightly in different languages. Here we just used the operators in Java as an example. So as the same in (a.ii) - (a.vi) operators.
