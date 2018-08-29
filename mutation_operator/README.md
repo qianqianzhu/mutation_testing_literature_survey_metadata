@@ -8,7 +8,7 @@ Our generic classification of mutation operators is as follows:
 
   1. Specification mutation
   2. Program mutation
-    - (a) Expression-level
+    * (a) Expression-level
         - (i) **arithmetic operator**:
         it mutates the arithmetic operators (including addition "+", subtraction "-", multiplication "\*", division "/", modulus "%" , unary operators "+", "-", and short-cut operators "++", "--")<sup>[1](#myfootnote1)</sup> by replacement, insertion or deletion.
         - (ii) **relational operator:**
@@ -33,54 +33,52 @@ Our generic classification of mutation operators is as follows:
         it replaces the conditional expression by _true_/_false_ so that the statements following the conditional always execute or skip.
         - (xii) **parenthesis:**
         it changes the precedence of the operation by deleting, adding or removing the parentheses.
-
-    - (b) Statement-level
-       - (i) **_return_ statement:**
-      it mutates _return_ statement in the method calls including _return_ value replacement or _return_ statement swapping.
-      - (ii) **_switch_ statement:**
-      it mutates _switch_ statements by making different combinations of the _switch_ labels (_case_/_default_) or the corresponding block statement.
-      - (iii) **_if_ statement:**
-      it mutates _if_ statements including removing additional semicolons after conditional expressions, adding an _else_ branch or replacing last _else if_ symbol to _else_.
-      - (iv) **statement deletion:**
-      it deletes statements including removing the method calls or removing each statement<sup>[5](#myfootnote5)</sup>.
-      - (v) **statement swap:**
-      it swaps the sequences of statements including rotating the order of the expressions under the use of the _comma_ operator, swapping the contained statements in _if-then-else_ statements and swapping two statements in the same scope.
-      - (vi) **brace:**
-      it moves the closing brace up or down by one statement.
-      - (vii) **_goto_ label:**
-      it changes the destination of the _goto_ label.
-      - (viii) **loop trap:**
-      it introduces a guard (trap after n<sup>th</sup> loop iteration) in front of the loop body. The mutant is killed if the guard is evaluated the n<sup>th</sup> time through the loop.
-      - (ix) **bomb statement:**
-      it replaces each statement by a special _Bomb()_ function. The mutant is killed if the _Bomb()_ function is executed which ensures each statement is reached.
-      - (x) **control-flow disruption (break/continue):**
-      it disrupts the normal control flow by adding, removing, moving or replacing _continue_/_break_ labels.
-      - (xi) **exception handler:**
-      it mutates the exception handlers including changing the _throws_, _catch_ or _finally_ clauses.
-      - (xii) **method call:**
-      it changes the number or position of the parameters/arguments in a method call, or replace a method name with other method names that have the same or compatible parameters and result type.
-      - (xiii) **_do_ statement:**
-      it replaces _do_ statements with _while_ statements.
-      - (xiv) **_while_ statement:**
-      it replaces _while_ statements with _do_ statements.
-
-    - (c) Others
-      - (i) **OO-specific:**
-      the mutation operators related to O(bject)-O(riented) Programming features[[4]](#ref4), such as Encapsulation, Inheritance and Polymorphism, e.g. _super_ keyword insertion.
-      - (ii) **SQL-specific:**
-      the mutation operators related to SQL-specific features[[6]](#ref6), e.g. replacing _SELECT_ to _SELECT DISTINCT_.
-      - (iii) **Java-specific<sup>[6](#myfootnote6)</sup>:**
-      the mutation operators related to Java-specific features[[4]](#ref4) (the operators in Java-Specific Features), e.g. _this_ keyword insertion.
-      - (iv) **JavaScript-specific:**
-      the mutation operators related to JavaScript-specific features[[4]](#ref4) (including DOM, JQUERY, and XmlHttpRequest operators), e.g. _var_ keyword deletion.
-      - (v) **SpreadSheet-specific:**
-      the mutation operators related to SpreadSheet-specific features[[7]](#ref7), e.g. changing range of cell areas.
-      - (vi) **AOP-specific:**
-      the mutation operators related to A(spect)-O(riented)-P(rogramming) features[[8]](#ref8)[[9]](#ref9), e.g. removing pointcut.
-      - (vii) **concurrent mutation:**
-      the mutation operators related to concurrent programming features[[10]](#ref10)[[11]](#ref11), e.g. replacing _notifyAll()_ with _notify()_.
-      - (viii) **Interface mutation:**
-      the mutation operators related to Interface-specific features[[12]](#ref12)[[13]](#ref13)}, suitable for use during integration testing.
+    * (b) Statement-level
+        - (i) **_return_ statement:**
+       it mutates _return_ statement in the method calls including _return_ value replacement or _return_ statement swapping.
+       - (ii) **_switch_ statement:**
+       it mutates _switch_ statements by making different combinations of the _switch_ labels (_case_/_default_) or the corresponding block statement.
+       - (iii) **_if_ statement:**
+       it mutates _if_ statements including removing additional semicolons after conditional expressions, adding an _else_ branch or replacing last _else if_ symbol to _else_.
+       - (iv) **statement deletion:**
+       it deletes statements including removing the method calls or removing each statement<sup>[5](#myfootnote5)</sup>.
+       - (v) **statement swap:**
+       it swaps the sequences of statements including rotating the order of the expressions under the use of the _comma_ operator, swapping the contained statements in _if-then-else_ statements and swapping two statements in the same scope.
+       - (vi) **brace:**
+       it moves the closing brace up or down by one statement.
+       - (vii) **_goto_ label:**
+       it changes the destination of the _goto_ label.
+       - (viii) **loop trap:**
+       it introduces a guard (trap after n<sup>th</sup> loop iteration) in front of the loop body. The mutant is killed if the guard is evaluated the n<sup>th</sup> time through the loop.
+       - (ix) **bomb statement:**
+       it replaces each statement by a special _Bomb()_ function. The mutant is killed if the _Bomb()_ function is executed which ensures each statement is reached.
+       - (x) **control-flow disruption (break/continue):**
+       it disrupts the normal control flow by adding, removing, moving or replacing _continue_/_break_ labels.
+       - (xi) **exception handler:**
+       it mutates the exception handlers including changing the _throws_, _catch_ or _finally_ clauses.
+       - (xii) **method call:**
+       it changes the number or position of the parameters/arguments in a method call, or replace a method name with other method names that have the same or compatible parameters and result type.
+       - (xiii) **_do_ statement:**
+       it replaces _do_ statements with _while_ statements.
+       - (xiv) **_while_ statement:**
+       it replaces _while_ statements with _do_ statements.
+    * (c) Others
+       - (i) **OO-specific:**
+       the mutation operators related to O(bject)-O(riented) Programming features[[4]](#ref4), such as Encapsulation, Inheritance and Polymorphism, e.g. _super_ keyword insertion.
+       - (ii) **SQL-specific:**
+       the mutation operators related to SQL-specific features[[6]](#ref6), e.g. replacing _SELECT_ to _SELECT DISTINCT_.
+       - (iii) **Java-specific<sup>[6](#myfootnote6)</sup>:**
+       the mutation operators related to Java-specific features[[4]](#ref4) (the operators in Java-Specific Features), e.g. _this_ keyword insertion.
+       - (iv) **JavaScript-specific:**
+       the mutation operators related to JavaScript-specific features[[4]](#ref4) (including DOM, JQUERY, and XmlHttpRequest operators), e.g. _var_ keyword deletion.
+       - (v) **SpreadSheet-specific:**
+       the mutation operators related to SpreadSheet-specific features[[7]](#ref7), e.g. changing range of cell areas.
+       - (vi) **AOP-specific:**
+       the mutation operators related to A(spect)-O(riented)-P(rogramming) features[[8]](#ref8)[[9]](#ref9), e.g. removing pointcut.
+       - (vii) **concurrent mutation:**
+       the mutation operators related to concurrent programming features[[10]](#ref10)[[11]](#ref11), e.g. replacing _notifyAll()_ with _notify()_.
+       - (viii) **Interface mutation:**
+       the mutation operators related to Interface-specific features[[12]](#ref12)[[13]](#ref13)}, suitable for use during integration testing.
 
 ## Footnotes:
 
