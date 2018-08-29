@@ -72,19 +72,19 @@ Our generic classification of mutation operators is as follows:
        <li> (i) OO-specific:</li>
        the mutation operators related to O(bject)-O(riented) Programming features[[4]](#ref4), such as Encapsulation, Inheritance and Polymorphism, e.g. super keyword insertion.
        <li> (ii) SQL-specific:</li>
-       the mutation operators related to SQL-specific features[[6]](#ref6), e.g. replacing SELECT to SELECT DISTINCT.
+       the mutation operators related to SQL-specific features<a href="#ref6">[6]</a>, e.g. replacing SELECT to SELECT DISTINCT.
        <li> (iii) Java-specific<sup><a href="#myfootnote6">6</a></sup>:</li>
-       the mutation operators related to Java-specific features[[4]](#ref4) (the operators in Java-Specific Features), e.g. this keyword insertion.
+       the mutation operators related to Java-specific features<a href="#ref4">[4]</a> (the operators in Java-Specific Features), e.g. this keyword insertion.
        <li> (iv) JavaScript-specific:</li>
-       the mutation operators related to JavaScript-specific features[[4]](#ref4) (including DOM, JQUERY, and XmlHttpRequest operators), e.g. var keyword deletion.
+       the mutation operators related to JavaScript-specific features<a href="#ref4">[4]</a> (including DOM, JQUERY, and XmlHttpRequest operators), e.g. var keyword deletion.
        <li> (v) SpreadSheet-specific:</li>
-       the mutation operators related to SpreadSheet-specific features[[7]](#ref7), e.g. changing range of cell areas.
+       the mutation operators related to SpreadSheet-specific features<a href="#ref7">[7]</a>, e.g. changing range of cell areas.
        <li> (vi) AOP-specific:</li>
-       the mutation operators related to A(spect)-O(riented)-P(rogramming) features[[8]](#ref8)[[9]](#ref9), e.g. removing pointcut.
+       the mutation operators related to A(spect)-O(riented)-P(rogramming) features<a href="#ref8">[8]</a><a href="#ref9">[9]</a>, e.g. removing pointcut.
        <li> (vii) concurrent mutation:</li>
-       the mutation operators related to concurrent programming features[[10]](#ref10)[[11]](#ref11), e.g. replacing notifyAll() with notify().
+       the mutation operators related to concurrent programming features<a href="#ref10">[10]</a><a href="#ref11">[11]</a>, e.g. replacing notifyAll() with notify().
        <li> (viii) Interface mutation:</li>
-       the mutation operators related to Interface-specific features[[12]](#ref12)[[13]](#ref13)}, suitable for use during integration testing.
+       the mutation operators related to Interface-specific features<a href="#ref12">[12]</a><a href="#ref13">[13]</a>, suitable for use during integration testing.
     </ul>
 </ul>
 
