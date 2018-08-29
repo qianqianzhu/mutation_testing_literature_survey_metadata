@@ -11,79 +11,79 @@ Our generic classification of mutation operators is as follows:
   <ul>
     <li>(a) Expression-level</li>
       <ul>
-       <li> (i) **arithmetic operator**:</li>
-        it mutates the arithmetic operators (including addition "+", subtraction "-", multiplication "\*", division "/", modulus "%" , unary operators "+", "-", and short-cut operators "++", "--")<sup>[1](#myfootnote1)</sup> by replacement, insertion or deletion.
-        <li> (ii) **relational operator**:</li>
+       <li> (i) arithmetic operator:</li>
+        it mutates the arithmetic operators (including addition "+", subtraction "-", multiplication "\*", division "/", modulus "%" , unary operators "+", "-", and short-cut operators "++", "--")<sup><a href="#myfootnote1">1</a></sup> by replacement, insertion or deletion.
+        <li> (ii) relational operator:</li>
         it mutates the relational operators (including ">", ">=", "<", "<=", "==", "!=") by replacement.
-        <li> (iii) **conditional operator**:</li>
+        <li> (iii) conditional operator:</li>
         it mutates the conditional operators (including and "&",  or "|", exclusive or "^", short-circuit operator "&&", "||", and negation "!") by replacement, insertion or deletion.
-        <li> (iv) **shift operator**:</li>
+        <li> (iv) shift operator:</li>
         it mutates the shift operators (including ">>", "<<" and ">>>") by replacement.
-        <li> (v) **bitwise operator**:</li>
+        <li> (v) bitwise operator:</li>
         it mutates the bitwise operators (including bitwise and "&", bitwise or "|", bitwise exclusive or "^" and bitwise negation "~") by replacement, insertion or deletion.
-        <li> (vi) **assignment operator**:</li>
+        <li> (vi) assignment operator:</li>
         it mutates the assignment operators (including the plain operator "=" and short-cut operators "+=", "-=", "\*=", "/=", "%=", "&=", "|=", "^=", "<<=", ">>=", ">>>=") by replacement. Besides, the plain operator "=" is also changed to "==" in some cases.
-        <li> (vii) **absolute value**:</li>
-        it mutates the arithmetic expression by preceding unary operators including _ABS_ (computing the absolute value), _NEGABS_ (compute the negative of the absolute value) and _ZPUSH_ (testing whether the expression is zero. If the expression is zero, then the mutant is killed; otherwise execution continues and the value of the expression is unchanged)<sup>[2](#myfootnote2)</sup> system. In some cases, this operator only applies the absolute value replacement.}.
-        <li> (viii) **constant**:</li>
-        it changes the literal value including increasing/decreasing the numeric values, replacing the numeric values by zero or swapping the boolean literal (_true_/_false_).
-        <li> (ix) **variable**:</li>
-        it substitutes a variable with another already declared variable of the same type and/or of the compatible type.<sup>[3](#myfootnote3)</sup>
-        <li> (x) **type**:</li>
-        it replaces a type with the other compatible types including type casting.<sup>[4](#myfootnote4)</sup>
-        <li> (xi) **conditional expression**:</li>
-        it replaces the conditional expression by _true_/_false_ so that the statements following the conditional always execute or skip.
-        <li> (xii) **parenthesis**:</li>
+        <li> (vii) absolute value:</li>
+        it mutates the arithmetic expression by preceding unary operators including ABS (computing the absolute value), NEGABS (compute the negative of the absolute value) and ZPUSH (testing whether the expression is zero. If the expression is zero, then the mutant is killed; otherwise execution continues and the value of the expression is unchanged)<sup><a href="#myfootnote2">2</a></sup> system. In some cases, this operator only applies the absolute value replacement.}.
+        <li> (viii) constant:</li>
+        it changes the literal value including increasing/decreasing the numeric values, replacing the numeric values by zero or swapping the boolean literal (true/false).
+        <li> (ix) variable:</li>
+        it substitutes a variable with another already declared variable of the same type and/or of the compatible type.<sup><a href="#myfootnote3">3</a></sup>
+        <li> (x) type:</li>
+        it replaces a type with the other compatible types including type casting.<sup><a href="#myfootnote4">4</a></sup>
+        <li> (xi) conditional expression:</li>
+        it replaces the conditional expression by true/false so that the statements following the conditional always execute or skip.
+        <li> (xii) parenthesis:</li>
         it changes the precedence of the operation by deleting, adding or removing the parentheses.
       </ul>
     <li>(b) Statement-level</li>
       <ul>
-        <li>(i) **_return_ statement**:</li>
-       it mutates _return_ statement in the method calls including _return_ value replacement or _return_ statement swapping.
-       <li> (ii) **_switch_ statement**:</li>
-       it mutates _switch_ statements by making different combinations of the _switch_ labels (_case_/_default_) or the corresponding block statement.
-       <li> (iii) **_if_ statement**:</li>
-       it mutates _if_ statements including removing additional semicolons after conditional expressions, adding an _else_ branch or replacing last _else if_ symbol to _else_.
-       <li> (iv) **statement deletion**:</li>
-       it deletes statements including removing the method calls or removing each statement<sup>[5](#myfootnote5)</sup>.
-       <li> (v) **statement swap**:</li>
-       it swaps the sequences of statements including rotating the order of the expressions under the use of the _comma_ operator, swapping the contained statements in _if-then-else_ statements and swapping two statements in the same scope.
-       <li> (vi) **brace**:</li>
+        <li>(i) return statement:</li>
+       it mutates return statement in the method calls including return value replacement or return statement swapping.
+       <li> (ii) switch statement:</li>
+       it mutates switch statements by making different combinations of the switch labels (case/default) or the corresponding block statement.
+       <li> (iii) if statement:</li>
+       it mutates if statements including removing additional semicolons after conditional expressions, adding an else branch or replacing last else if symbol to else.
+       <li> (iv) statement deletion:</li>
+       it deletes statements including removing the method calls or removing each statement<sup><a href="#myfootnote5">5</a></sup>.
+       <li> (v) statement swap:</li>
+       it swaps the sequences of statements including rotating the order of the expressions under the use of the comma operator, swapping the contained statements in if-then-else statements and swapping two statements in the same scope.
+       <li> (vi) brace:</li>
        it moves the closing brace up or down by one statement.
-       <li> (vii) **_goto_ label**:</li>
-       it changes the destination of the _goto_ label.
-       <li> (viii) **loop trap**:</li>
+       <li> (vii) goto label:</li>
+       it changes the destination of the goto label.
+       <li> (viii) loop trap:</li>
        it introduces a guard (trap after n<sup>th</sup> loop iteration) in front of the loop body. The mutant is killed if the guard is evaluated the n<sup>th</sup> time through the loop.
-       <li> (ix) **bomb statement**:</li>
-       it replaces each statement by a special _Bomb()_ function. The mutant is killed if the _Bomb()_ function is executed which ensures each statement is reached.
-       <li> (x) **control-flow disruption (break/continue)**:</li>
-       it disrupts the normal control flow by adding, removing, moving or replacing _continue_/_break_ labels.
-       <li> (xi) **exception handler**:</li>
-       it mutates the exception handlers including changing the _throws_, _catch_ or _finally_ clauses.
-       <li> (xii) **method call**:</li>
+       <li> (ix) bomb statement:</li>
+       it replaces each statement by a special Bomb() function. The mutant is killed if the Bomb() function is executed which ensures each statement is reached.
+       <li> (x) control-flow disruption (break/continue):</li>
+       it disrupts the normal control flow by adding, removing, moving or replacing continue/break labels.
+       <li> (xi) exception handler:</li>
+       it mutates the exception handlers including changing the throws, catch or finally clauses.
+       <li> (xii) method call:</li>
        it changes the number or position of the parameters/arguments in a method call, or replace a method name with other method names that have the same or compatible parameters and result type.
-       <li> (xiii) **_do_ statement**:</li>
-       it replaces _do_ statements with _while_ statements.
-       <li> (xiv) **_while_ statement**:</li>
-       it replaces _while_ statements with _do_ statements.
+       <li> (xiii) do statement:</li>
+       it replaces do statements with while statements.
+       <li> (xiv) while statement:</li>
+       it replaces while statements with do statements.
      </ul>
    <li>(c) Others </li>
      <ul>
-       <li> (i) **OO-specific**:</li>
-       the mutation operators related to O(bject)-O(riented) Programming features[[4]](#ref4), such as Encapsulation, Inheritance and Polymorphism, e.g. _super_ keyword insertion.
-       <li> (ii) **SQL-specific**:</li>
-       the mutation operators related to SQL-specific features[[6]](#ref6), e.g. replacing _SELECT_ to _SELECT DISTINCT_.
-       <li> (iii) **Java-specific<sup>[6](#myfootnote6)</sup>**:</li>
-       the mutation operators related to Java-specific features[[4]](#ref4) (the operators in Java-Specific Features), e.g. _this_ keyword insertion.
-       <li> (iv) **JavaScript-specific**:</li>
-       the mutation operators related to JavaScript-specific features[[4]](#ref4) (including DOM, JQUERY, and XmlHttpRequest operators), e.g. _var_ keyword deletion.
-       <li> (v) **SpreadSheet-specific**:</li>
+       <li> (i) OO-specific:</li>
+       the mutation operators related to O(bject)-O(riented) Programming features[[4]](#ref4), such as Encapsulation, Inheritance and Polymorphism, e.g. super keyword insertion.
+       <li> (ii) SQL-specific:</li>
+       the mutation operators related to SQL-specific features[[6]](#ref6), e.g. replacing SELECT to SELECT DISTINCT.
+       <li> (iii) Java-specific<sup><a href="#myfootnote6">6</a></sup>:</li>
+       the mutation operators related to Java-specific features[[4]](#ref4) (the operators in Java-Specific Features), e.g. this keyword insertion.
+       <li> (iv) JavaScript-specific:</li>
+       the mutation operators related to JavaScript-specific features[[4]](#ref4) (including DOM, JQUERY, and XmlHttpRequest operators), e.g. var keyword deletion.
+       <li> (v) SpreadSheet-specific:</li>
        the mutation operators related to SpreadSheet-specific features[[7]](#ref7), e.g. changing range of cell areas.
-       <li> (vi) **AOP-specific**:</li>
+       <li> (vi) AOP-specific:</li>
        the mutation operators related to A(spect)-O(riented)-P(rogramming) features[[8]](#ref8)[[9]](#ref9), e.g. removing pointcut.
-       <li> (vii) **concurrent mutation**:</li>
-       the mutation operators related to concurrent programming features[[10]](#ref10)[[11]](#ref11), e.g. replacing _notifyAll()_ with _notify()_.
-       <li> (viii) **Interface mutation**:</li>
+       <li> (vii) concurrent mutation:</li>
+       the mutation operators related to concurrent programming features[[10]](#ref10)[[11]](#ref11), e.g. replacing notifyAll() with notify().
+       <li> (viii) Interface mutation:</li>
        the mutation operators related to Interface-specific features[[12]](#ref12)[[13]](#ref13)}, suitable for use during integration testing.
     </ul>
 </ul>
