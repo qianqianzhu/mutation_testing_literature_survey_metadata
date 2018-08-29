@@ -9,8 +9,8 @@ Our generic classification of mutation operators is as follows:
   1. Specification mutation
   2. Program mutation
     <ul><li>(a) Expression-level</li>
-        c
-        <li> (i) **arithmetic operator**:</li>
+      <ul>
+       <li> (i) **arithmetic operator**:</li>
         it mutates the arithmetic operators (including addition "+", subtraction "-", multiplication "\*", division "/", modulus "%" , unary operators "+", "-", and short-cut operators "++", "--")<sup>[1](#myfootnote1)</sup> by replacement, insertion or deletion.
         <li> (ii) **relational operator**:</li>
         it mutates the relational operators (including ">", ">=", "<", "<=", "==", "!=") by replacement.
@@ -34,9 +34,9 @@ Our generic classification of mutation operators is as follows:
         it replaces the conditional expression by _true_/_false_ so that the statements following the conditional always execute or skip.
         <li> (xii) **parenthesis**:</li>
         it changes the precedence of the operation by deleting, adding or removing the parentheses.
-        </ul>
+      </ul>
     <li>(b) Statement-level</li>
-        <ul>
+      <ul>
         <li>(i) **_return_ statement**:</li>
        it mutates _return_ statement in the method calls including _return_ value replacement or _return_ statement swapping.
        <li> (ii) **_switch_ statement**:</li>
@@ -65,9 +65,9 @@ Our generic classification of mutation operators is as follows:
        it replaces _do_ statements with _while_ statements.
        <li> (xiv) **_while_ statement**:</li>
        it replaces _while_ statements with _do_ statements.
-       </ul>
+     </ul>
    <li>(c) Others </li>
-       <ul>
+     <ul>
        <li> (i) **OO-specific**:</li>
        the mutation operators related to O(bject)-O(riented) Programming features[[4]](#ref4), such as Encapsulation, Inheritance and Polymorphism, e.g. _super_ keyword insertion.
        <li> (ii) **SQL-specific**:</li>
@@ -84,7 +84,7 @@ Our generic classification of mutation operators is as follows:
        the mutation operators related to concurrent programming features[[10]](#ref10)[[11]](#ref11), e.g. replacing _notifyAll()_ with _notify()_.
        <li> (viii) **Interface mutation**:</li>
        the mutation operators related to Interface-specific features[[12]](#ref12)[[13]](#ref13)}, suitable for use during integration testing.
-       </ul>
+    </ul>
 </ul>
 ## Footnotes:
 
